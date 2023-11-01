@@ -49,7 +49,7 @@ exports.createPost = (req, res, next) => {
     content: content,
     imageUrl: imageUrl,
     creator: {
-      name: "Smruti",
+      name: req.userId,
     },
   });
 
